@@ -10,11 +10,21 @@
     <div id="container">
       <h1>Money Visualizer</h1>
       <div id="card">
-        <form>
+        <form id="amount-form">
           <input type="number" placeholder="Enter Amount" />
+          <select id="convert-item">
+            <option value="penny">Penny ($0.01)</option>
+            <option value="nickel">Nickel ($0.05)</option>
+            <option value="dime">Dime ($0.10)</option>
+            <option value="quarter">Quarter ($0.25)</option>
+            <option value="porsche911gt3rs">
+              Porsche 911 GT3 RS ($241,300)
+            </option>
+          </select>
           <button>Visualize</button>
         </form>
       </div>
+      <div id="amount-div"></div>
     </div>
     <script src="script.js"></script>
   </body>
