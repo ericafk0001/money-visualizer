@@ -66,3 +66,11 @@ p {
 .porsche911gt3rs {
   background-image: url("objects/porsche-gt3-rs.png");
 }
+
+.boba {
+  background-image: url("objects/boba.avif");
+}
+
+.wiessmann {
+  background-image: url("objects/wiessmann.png");
+}
