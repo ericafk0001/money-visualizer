@@ -9,10 +9,16 @@
   <body>
     <div id="container">
       <h1>Money Visualizer</h1>
+      <p>Entering high numbers could crash the page</p>
       <div id="card">
         <form id="amount-form">
-          <input type="number" placeholder="Enter Amount" />
-          <select id="convert-item">
+          <input
+            type="number"
+            placeholder="Enter Amount"
+            id="number"
+            required
+          />
+          <select id="object">
             <option value="penny">Penny ($0.01)</option>
             <option value="nickel">Nickel ($0.05)</option>
             <option value="dime">Dime ($0.10)</option>
@@ -21,7 +27,7 @@
               Porsche 911 GT3 RS ($241,300)
             </option>
           </select>
-          <button>Visualize</button>
+          <button id="visualizeBtn" type="submit">Visualize</button>
         </form>
       </div>
       <div id="amount-div"></div>
