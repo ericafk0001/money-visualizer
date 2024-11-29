@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
       objectPrice = 5.25;
     } else if (object === "wiessmann") {
       objectPrice = 1000000;
+    } else if (object === "minecraft") {
+      objectPrice = 30;
     }
 
     const numberOfObjects = Math.floor(amount / objectPrice);
