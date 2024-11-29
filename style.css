@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
 }
 
 #container {
@@ -58,8 +59,13 @@ p {
   background-size: cover;
 }
 
+#number {
+  width: 90%;
+}
+
 #object {
   height: 40px;
+  width: 90%;
   background: #ffffff;
   border-style: solid;
   border-radius: 10px;
@@ -69,6 +75,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: row;
+  margin-top: 30px;
+}
+
+.object-amount-display {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #visualizeBtn {

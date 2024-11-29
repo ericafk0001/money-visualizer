@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const visualizeButton = document.getElementById("visualizeBtn");
+  let objectCount = 0;
 
   visualizeButton.addEventListener("click", function (event) {
     event.preventDefault();
+    objectCount = 0;
 
     const amount = document.querySelector("input[type='number']").value;
     const object = document.getElementById("object").value;
@@ -37,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const div = document.createElement("div");
       div.classList.add("object", object);
       visualizationDiv.appendChild(div);
+      objectCount++;
+    }
+
+    const countDisplay = document.querySelector(".object-amount-display");
+    if (countDisplay) {
+      countDisplay.textContent = `Total: ${objectCount}`;
     }
   });
 });
