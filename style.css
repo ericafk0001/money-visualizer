@@ -146,3 +146,7 @@ p {
 .wiessmann {
   background-image: url("objects/wiessmann.png");
 }
+
+.apple {
+  background-image: url("objects/apple.webp");
+}

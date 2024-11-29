@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
       objectPrice = 0.25;
     } else if (object === "porsche911gt3rs") {
       objectPrice = 241300;
+    } else if (object === "apple") {
+      objectPrice = 2.4;
     } else if (object === "boba") {
       objectPrice = 5.25;
     } else if (object === "wiessmann") {
